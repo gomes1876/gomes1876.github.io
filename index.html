@@ -1,14 +1,291 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-_Byknyeg.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D-SJFp2z.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu portifólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Gabriel Gomes</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Gabriel Gomes</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="img-profile" src="./assets/img-02.png" alt="Gabriel Gomes profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, eu sou</p>
+      <h1 class="title">Gabriel Gomes</h1>
+      <p class="section__text__p2">Desenvolvedor Front-End</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contato
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" target="_blank"
+          onclick="location.href='www.linkedin.com/in/gabriel-gomes-de-oliveira-03485468'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/gomes1876'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">Sobre mim</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/img-01.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiência</h3>
+            <p>5+ years <br />Desenvolvimento Front-End</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Educação</h3>
+            <p>Faesa<br />Sistemas de informação</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+
+            Trabalhei em grandes projetos, web e mobile, tendo experiências com apicações de campo
+            que demandam inatividade com internet para posterior sincronização(de maneira ativa e intativa), como também
+            em projetos com
+            instituições de crédito, além de saber realziar o desgin de sistema, utilizando Figma, para construição de
+            UX/UI.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Libs de domínio</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Zustand</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Sqlite</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tailwind</h3>
+                <p>intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Avançadoasic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Native Base</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GraphQl</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React Native</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Angular</h3>
+                <p>Iniciante</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intrmediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Design</h3>
+                <p>Intrmediário</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Meus projetos de estudo</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="https://github.com/gomes1876/portifolio/blob/main/images/my_apps/stock_example_1.jpg?raw=true"
+              alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Stock</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://drive.google.com/file/d/1R0mplEbhdhpZRnF8qZMgkVvpVlveklYb/view?usp=sharing'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://drive.google.com/file/d/1R0mplEbhdhpZRnF8qZMgkVvpVlveklYb/view?usp=sharing'">
+              Baixar
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="https://github.com/gomes1876/portifolio/blob/main/images/my_apps/clima_example.jpg?raw=true"
+              alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Clima</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/gomes1876/clima'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://drive.google.com/file/d/1_4NCy891ems0HA15ZfSMkqfgiNQ60BfL/view?usp=sharing'">
+              Baixar
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="https://github.com/gomes1876/portifolio/blob/main/images/my_apps/doe_sangue_example_3.png?raw=true"
+              alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Salvando Vidas Hack 2020</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://drive.google.com/file/d/1R0mplEbhdhpZRnF8qZMgkVvpVlveklYb/view?usp=sharing'">
+              Baixar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Entre em contato</p>
+    <h1 class="title">Meus contatos</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">gabriel.gomes.oliveira.dev@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a target="_blank" href="http://www.linkedin.com/in/gabriel-gomes-de-oliveira-03485468">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Gabriel Gomes. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
